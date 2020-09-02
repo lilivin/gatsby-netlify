@@ -1,0 +1,21 @@
+html {
+    font-family: 'Roboto', sans-serif;
+  }
+
+.mainSite{
+    max-width: 1280px;
+    margin: 0 auto;
+    &__header{
+        text-align: center;
+        h1{
+            margin: 20px 0 50px 0;
+            font-weight: bold;
+        }
+        &-link{
+            font-size: 2rem;
+            box-shadow: none;
+            color: #007acc;
+            font-weight: bold;
+        }
+    }
+}

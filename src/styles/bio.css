@@ -1,0 +1,57 @@
+.bio {
+  padding: 0 20px;
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid lightgray;
+}
+
+@media (min-width: 769px) {
+  .bio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.bio__header {
+  font-size: 1.4rem;
+  width: 90%;
+  margin: 20px 0;
+}
+
+.bio .imageContainer {
+  display: none;
+}
+
+@media (min-width: 430px) {
+  .bio .imageContainer {
+    display: block;
+  }
+}
+
+.bio__image {
+  float: left;
+  width: 100px;
+  margin-right: 40px;
+  border-radius: 50%;
+}
+
+@media (min-width: 769px) {
+  .bio__image {
+    float: initial;
+    padding: 80px;
+  }
+}
+
+.bio__description {
+  font-size: .8rem;
+  width: 90%;
+  text-align: justify;
+}
+/*# sourceMappingURL=bio.css.map */

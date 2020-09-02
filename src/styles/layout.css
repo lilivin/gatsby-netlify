@@ -1,0 +1,26 @@
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+.mainSite {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.mainSite__header {
+  text-align: center;
+}
+
+.mainSite__header h1 {
+  margin: 20px 0 50px 0;
+  font-weight: bold;
+}
+
+.mainSite__header-link {
+  font-size: 2rem;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #007acc;
+  font-weight: bold;
+}
+/*# sourceMappingURL=layout.css.map */
