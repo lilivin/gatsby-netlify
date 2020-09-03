@@ -14,17 +14,17 @@ const Bio = () => {
       <h1 className="header">Kontakt</h1>
       <div className="contactContainer">
       <form
-              name="contact-form"
-              method="post"
-              data-netlify="true"
-              data-netlify-honeypot="bot-field"
-          >
-              <label className="contactForm__label">Imie</label>
-              <input name="name" placeholder="Wpisz imie..." type="text" className="contactForm__input"/>
-              <label className="contactForm__label">Wiadomość</label>
-              <textarea name="message" placeholder="Treść wiadomości..." className="contactForm__input"/>
-              <button className="contactForm__button">Send</button>
-          </form>
+        name="contact-form"
+        method="post"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+        className="contactForm"
+      >
+        <input name="name" placeholder="Your Name" type="text" className="contactForm__input"/>
+        <input name="email" placeholder="name@name.com" type="email" className="contactForm__input"/>
+        <textarea name="message" className="contactForm__input"/>
+        <button>Send</button>
+      </form>
           <div className="contactAlternatives">
             <div className="contactWay">
               <FontAwesomeIcon icon={faEnvelopeOpenText} size="2x"/>
