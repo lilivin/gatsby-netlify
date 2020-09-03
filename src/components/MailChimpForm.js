@@ -19,7 +19,7 @@ handleChange = event => {
   }
 render() {
     return (
-      <form onSubmit={this._handleSubmit}>
+      <form onSubmit={this.handleSubmit}>
         <TextField
           id="outlined-email-input"
           label="Email"
