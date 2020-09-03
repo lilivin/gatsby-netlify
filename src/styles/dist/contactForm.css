@@ -5,48 +5,84 @@
 
 .contactContainer {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media (min-width: 769px) {
+  .contactContainer {
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .contactForm {
-  margin-left: 20px;
-  width: 50%;
-  border-right: 1px solid lightgray;
+  width: 90%;
+  margin: 0 auto;
+}
+@media (min-width: 769px) {
+  .contactForm {
+    width: 50%;
+    margin-left: 20px;
+    border-right: 1px solid lightgray;
+  }
 }
 .contactForm__label {
   display: block;
-  margin: 10px 0 0 0;
+}
+@media (min-width: 769px) {
+  .contactForm__label {
+    margin: 10px 0 0 0;
+  }
 }
 .contactForm__input {
   display: block;
-  width: 90%;
+  width: 100%;
   padding: 5px;
   border: none;
   border-bottom: 1px solid gray;
   height: 40px;
+  margin: 0 auto;
+}
+@media (min-width: 769px) {
+  .contactForm__input {
+    width: 90%;
+    margin: 0;
+  }
 }
 .contactForm__input:focus {
   outline: none;
 }
 .contactForm__button {
-  margin-top: 20px;
+  display: block;
   padding: 10px 0;
   width: 90%;
   border-radius: 20px;
   border: 1px solid black;
+  margin: 20px auto;
   cursor: pointer;
+}
+@media (min-width: 769px) {
+  .contactForm__button {
+    margin: 20px 0;
+  }
 }
 .contactForm__button:focus {
   outline: none;
 }
 
 .contactAlternatives {
-  width: 50%;
-}
-.contactAlternatives .contactWay {
-  width: 50%;
-  text-align: center;
-  cursor: pointer;
+  width: 90%;
   margin: 0 auto;
+  text-align: center;
+}
+@media (min-width: 769px) {
+  .contactAlternatives {
+    width: 40%;
+  }
+  .contactAlternatives .contactWay {
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    margin: 0 auto;
+  }
 }
