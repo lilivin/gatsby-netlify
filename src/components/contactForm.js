@@ -22,7 +22,7 @@ const Bio = () => {
       >
         <label class="contactForm__label">
           Nazwa
-          <input name="name" placeholder="Wpisz email..."/>
+          <input name="name" placeholder="Wpisz email..." class="contactForm__input"/>
         </label>
         <label class="contactForm__label">
           Tresc
