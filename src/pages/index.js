@@ -4,6 +4,7 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import MailChimpForm from '../components/MailChimpForm'
 import ContactForm from "../components/contactForm"
 import '../styles/index.css'
 import { rhythm } from "../utils/typography"
@@ -41,6 +42,7 @@ const BlogIndex = ({ data, location }) => {
           )
         })}
       </div>
+      <MailChimpForm/>
       <ContactForm/>
     </Layout>
   )

@@ -1,3 +1,6 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`
+})
 module.exports = {
   siteMetadata: {
     title: `zycnieprzezyc`,
@@ -12,6 +15,12 @@ module.exports = {
     },
   },
   plugins: [
+    {
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+          endpoint: '', 
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -50,6 +59,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-material-ui`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {

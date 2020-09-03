@@ -1,5 +1,9 @@
 "use strict";
 
+require("dotenv").config({
+  path: ".env.".concat(process.env.NODE_ENV)
+});
+
 module.exports = {
   siteMetadata: {
     title: "zycnieprzezyc",
@@ -14,6 +18,11 @@ module.exports = {
     }
   },
   plugins: [{
+    resolve: 'gatsby-plugin-mailchimp',
+    options: {
+      endpoint: ''
+    }
+  }, {
     resolve: "gatsby-source-filesystem",
     options: {
       path: "".concat(__dirname, "/content/blog"),
@@ -40,7 +49,7 @@ module.exports = {
         }
       }, "gatsby-remark-prismjs", "gatsby-remark-copy-linked-files", "gatsby-remark-smartypants"]
     }
-  }, "gatsby-transformer-sharp", "gatsby-plugin-sharp", {
+  }, "gatsby-transformer-sharp", "gatsby-plugin-sharp", "gatsby-plugin-material-ui", {
     resolve: "gatsby-plugin-google-analytics",
     options: {//trackingId: `ADD YOUR TRACKING ID HERE`,
     }
