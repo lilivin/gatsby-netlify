@@ -23,7 +23,7 @@ const Bio = () => {
               <label className="contactForm__label">Imie</label>
               <input name="name" placeholder="Wpisz imie..." type="text" className="contactForm__input"/>
               <label className="contactForm__label">Email</label>
-              <input name="email" placeholder="Wpisz email..." type="email" className="contactForm__input"/>
+              <input name="email" placeholder="Wpisz email..." type="text" className="contactForm__input"/>
               <label className="contactForm__label">Wiadomość</label>
               <textarea name="message" placeholder="Treść wiadomości..." className="contactForm__input"/>
               <button className="contactForm__button">Send</button>
