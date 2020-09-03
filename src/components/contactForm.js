@@ -15,16 +15,15 @@ const Bio = () => {
       <div className="contactContainer">
       <form
               name="contact-form"
-              method="POST"
+              method="post"
               data-netlify="true"
               data-netlify-honeypot="bot-field"
-              className="contactForm"
           >
               <label className="contactForm__label">Imie</label>
               <input name="name" placeholder="Wpisz imie..." type="text" className="contactForm__input"/>
               <label className="contactForm__label">Wiadomość</label>
               <textarea name="message" placeholder="Treść wiadomości..." className="contactForm__input"/>
-              <button type="submit" className="contactForm__button">Send</button>
+              <button className="contactForm__button">Send</button>
           </form>
           <div className="contactAlternatives">
             <div className="contactWay">
