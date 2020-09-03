@@ -15,7 +15,7 @@ const Bio = () => {
       <div className="contactContainer">
           <form
               name="contact-form"
-              method="post"
+              method="POST"
               data-netlify="true"
               data-netlify-honeypot="bot-field"
               className="contactForm"
@@ -26,7 +26,7 @@ const Bio = () => {
               <input name="email" placeholder="Wpisz email..." type="text" className="contactForm__input"/>
               <label className="contactForm__label">Wiadomość</label>
               <textarea name="message" placeholder="Treść wiadomości..." className="contactForm__input"/>
-              <button className="contactForm__button">Send</button>
+              <button type="submit" className="contactForm__button">Send</button>
           </form>
           <div className="contactAlternatives">
             <div className="contactWay">
