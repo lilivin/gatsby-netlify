@@ -20,7 +20,7 @@ const Bio = () => {
       data-netlify-honeypot="bot-field"
       >
         <input name="name" placeholder="Your Name" type="text" />
-        <input name="email" placeholder="name@name.com" type="email" />
+        <input name="email" placeholder="name@name.com" type="text" />
         <textarea name="message" />
         <button>Send</button>
       </form>
