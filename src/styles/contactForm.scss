@@ -15,7 +15,7 @@
     
 }
 
-.contactForm {
+form {
     width: 90%;
     margin: 0 auto;
     @media(min-width: 769px){
@@ -23,43 +23,43 @@
         margin-left: 20px;
         border-right: 1px solid lightgray;
     }
-    &__label{
-        display: block;
-        @media(min-width: 769px){
-            margin: 10px 0 0 0;
-        }
-        
+}
+label{
+    display: block;
+    @media(min-width: 769px){
+        margin: 10px 0 0 0;
     }
-    &__input{
-        display: block;
-        width: 100%;
-        padding: 5px;
-        border: none;
-        border-bottom: 1px solid gray;
-        height: 40px;
-        margin: 0 auto;
-        @media(min-width: 769px){
-            width: 90%;
-            margin: 0;
-        }
-        &:focus{
-            outline: none;
-        }
-    }
-    &__button{
-        display: block;
-        padding: 10px 0;
+}
+
+input, textarea{
+    display: block;
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid gray;
+    height: 40px;
+    margin: 0 auto;
+    @media(min-width: 769px){
         width: 90%;
-        border-radius: 20px;
-        border: 1px solid black;
-        margin: 20px auto;
-        cursor: pointer;
-        @media(min-width: 769px){
-            margin: 20px 0;;
-        }
-        &:focus{
-            outline: none;
-        }
+        margin: 0;
+    }
+    &:focus{
+        outline: none;
+    }
+}
+button{
+    display: block;
+    padding: 10px 0;
+    width: 90%;
+    border-radius: 20px;
+    border: 1px solid black;
+    margin: 20px auto;
+    cursor: pointer;
+    @media(min-width: 769px){
+        margin: 20px 0;;
+    }
+    &:focus{
+        outline: none;
     }
 }
 
