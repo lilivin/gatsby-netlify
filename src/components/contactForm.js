@@ -21,7 +21,6 @@ const Bio = () => {
           >
             <label>Email</label>
             <input name="name" placeholder="Wpisz email" type="text" />
-            <input name="email" placeholder="name@name.com" type="email" />
             <label>Wiadomosc</label>
             <textarea name="message" placeholder="Wpisz wiadomosc"/>
             <button name="submitButton">Send</button>
