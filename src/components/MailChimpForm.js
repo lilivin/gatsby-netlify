@@ -20,24 +20,20 @@ handleChange = event => {
 render() {
     return (
       <form onSubmit={this.handleSubmit}>
-        <TextField
-          id="outlined-email-input"
+        <input
           label="Email"
           type="email"
           name="email"
+          placeholder="Wpisz swój email..."
           autoComplete="email"
-          variant="outlined"
           onChange={this.handleChange}
         />
         <br />
-        <Button
-          variant="contained"
-          color="primary"
-          label="Submit"
+        <button
           type="submit"
         >
-          <Typography variant="button">Envoyer</Typography>
-        </Button>
+          Zapisz się
+        </button>
       </form>
     )
   }

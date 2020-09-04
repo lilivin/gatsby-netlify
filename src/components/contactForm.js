@@ -20,7 +20,6 @@ const Bio = () => {
             data-netlify-honeypot="bot-field"
             className="contactForm"
           >
-          
             <label className="contactForm__label">Email</label>
             <input name="name" placeholder="Wpisz email..."/>
             <label className="contactForm__label">Wiadomość</label>
