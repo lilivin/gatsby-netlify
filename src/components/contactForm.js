@@ -13,7 +13,7 @@ const Bio = () => {
     <>
       <h1 className="header">Kontakt</h1>
       <div className="contactContainer">  
-      <form name="contact" method="POST" data-netlify="true">
+      <form name="contact-form" method="POST" data-netlify="true">
         <p>
           <label for="name">Name</label>
           <input type="text" id="name" name="name" />
