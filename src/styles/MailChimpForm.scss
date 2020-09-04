@@ -1,0 +1,43 @@
+.newsletterContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.newsletterInfo{
+    width: 50%;
+    &__header{
+        margin: 0;
+        font-weight: bold;
+        text-align: center;
+        margin: 20px 0;
+    }
+    &__description{
+        text-align: justify;
+    }
+}
+
+.newsletterForm{
+    display: flex;
+    width: 40%;
+    min-width: 320px;
+    height: 40px;
+    &__input{
+        width: 70%;
+        border-radius: 20px 0 0 20px;
+        border: 1px solid lightgray;
+        padding-left: 10px;
+    }
+    &__button{
+        width: 30%;
+        border: 1px solid lightgray;
+        border-left: none;
+        border-radius: 0 20px 20px 0;
+        cursor: pointer;
+    }
+}
+
+.newsletterHeader{
+    font-size: 1.4rem;
+    padding: 0 20px;
+}

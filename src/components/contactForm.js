@@ -1,5 +1,6 @@
 import React from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import '../styles/contactForm.css'
 import {faCoffee, faEnvelopeOpenText} from '@fortawesome/free-solid-svg-icons'
 import {faFacebook, faInstagram} from '@fortawesome/free-brands-svg-icons'
 import { useStaticQuery, graphql } from "gatsby"
@@ -18,6 +19,7 @@ const Bio = () => {
             method="post"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
+            className="newsletterForm"
           >
             <label>Email</label>
             <input name="name" placeholder="Your Name" type="text" />

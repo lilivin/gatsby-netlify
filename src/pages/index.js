@@ -43,7 +43,6 @@ const BlogIndex = ({ data, location }) => {
         })}
       </div>
       <MailChimpForm/>
-      <ContactForm/>
     </Layout>
   )
 }
