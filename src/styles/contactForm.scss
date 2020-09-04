@@ -31,7 +31,7 @@ label{
     }
 }
 
-input, textarea{
+input[name="name"], textarea[name="message"] {
     display: block;
     width: 100%;
     padding: 5px;
@@ -47,7 +47,7 @@ input, textarea{
         outline: none;
     }
 }
-button{
+button[name="submitButton"] {
     display: block;
     padding: 10px 0;
     width: 90%;

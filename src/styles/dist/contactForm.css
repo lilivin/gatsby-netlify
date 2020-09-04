@@ -36,7 +36,7 @@ label {
   }
 }
 
-input, textarea {
+input[name=name], textarea[name=message] {
   display: block;
   width: 100%;
   padding: 5px;
@@ -46,16 +46,16 @@ input, textarea {
   margin: 0 auto;
 }
 @media (min-width: 769px) {
-  input, textarea {
+  input[name=name], textarea[name=message] {
     width: 90%;
     margin: 0;
   }
 }
-input:focus, textarea:focus {
+input[name=name]:focus, textarea[name=message]:focus {
   outline: none;
 }
 
-button {
+button[name=submitButton] {
   display: block;
   padding: 10px 0;
   width: 90%;
@@ -65,11 +65,11 @@ button {
   cursor: pointer;
 }
 @media (min-width: 769px) {
-  button {
+  button[name=submitButton] {
     margin: 20px 0;
   }
 }
-button:focus {
+button[name=submitButton]:focus {
   outline: none;
 }
 
