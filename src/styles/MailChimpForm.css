@@ -1,22 +1,38 @@
 .newsletterContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  display: block;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 769px) {
+  .newsletterContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .newsletterInfo {
-  width: 50%;
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media (min-width: 769px) {
+  .newsletterInfo {
+    width: 45%;
+    margin: 0;
+    padding: 0 20px;
+  }
 }
 
 .newsletterInfo__header {
   margin: 0;
   font-weight: bold;
-  text-align: center;
   margin: 20px 0;
 }
 
@@ -28,9 +44,17 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 40%;
   min-width: 320px;
   height: 40px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media (min-width: 769px) {
+  .newsletterForm {
+    width: 45%;
+    margin: 0;
+  }
 }
 
 .newsletterForm__input {

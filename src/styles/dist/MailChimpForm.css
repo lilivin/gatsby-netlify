@@ -1,16 +1,29 @@
 .newsletterContainer {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+  display: block;
+  margin-bottom: 20px;
+}
+@media (min-width: 769px) {
+  .newsletterContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .newsletterInfo {
-  width: 50%;
+  width: 90%;
+  margin: 0 auto;
+}
+@media (min-width: 769px) {
+  .newsletterInfo {
+    width: 45%;
+    margin: 0;
+    padding: 0 20px;
+  }
 }
 .newsletterInfo__header {
   margin: 0;
   font-weight: bold;
-  text-align: center;
   margin: 20px 0;
 }
 .newsletterInfo__description {
@@ -19,9 +32,16 @@
 
 .newsletterForm {
   display: flex;
-  width: 40%;
   min-width: 320px;
   height: 40px;
+  width: 90%;
+  margin: 0 auto;
+}
+@media (min-width: 769px) {
+  .newsletterForm {
+    width: 45%;
+    margin: 0;
+  }
 }
 .newsletterForm__input {
   width: 70%;

@@ -3,44 +3,25 @@
   padding: 0 20px;
 }
 
-.contactContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-@media (min-width: 769px) {
-  .contactContainer {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
-
 .contactAlternatives {
   width: 90%;
-  margin: 0 auto;
+  margin: 80px auto;
   text-align: center;
-  margin-top: 30px;
 }
 
 @media (min-width: 769px) {
   .contactAlternatives {
-    width: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
-  .contactAlternatives .contactWay {
-    width: 100%;
-    text-align: center;
-    cursor: pointer;
-    margin: 0 auto;
-  }
+}
+
+.contactAlternatives .contactWay {
+  width: 100%;
+  max-width: 320px;
+  text-align: center;
+  cursor: pointer;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=contactForm.css.map */

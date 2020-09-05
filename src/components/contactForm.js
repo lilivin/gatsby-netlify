@@ -13,21 +13,6 @@ const Bio = () => {
   return (
     <>
       <h1 className="header">Kontakt</h1>
-      <div className="contactContainer">  
-          <form
-            name="contact-form"
-            method="post"
-            data-netlify="true"
-            data-netlify-honeypot="bot-field"
-            className="newsletterForm"
-          >
-            <label>Email</label>
-            <input name="name" placeholder="Your Name" type="text" />
-            <input name="email" placeholder="name@name.com" type="email" />
-            <label>Wiadomosc</label>
-            <textarea name="message" />
-            <button name="submitButton">Send</button>
-          </form>
           <div className="contactAlternatives">
             <div className="contactWay">
               <FontAwesomeIcon icon={faEnvelopeOpenText} size="2x"/>
@@ -42,7 +27,6 @@ const Bio = () => {
               <p>@karol.liwinski.7</p>
             </div>
           </div>
-      </div>
     </>
   )
 }
