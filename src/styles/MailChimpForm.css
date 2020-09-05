@@ -64,12 +64,23 @@
   padding-left: 10px;
 }
 
+.newsletterForm__input:focus {
+  outline: none;
+}
+
 .newsletterForm__button {
   width: 30%;
-  border: 1px solid lightgray;
+  border: 1px solid #007acc;
   border-left: none;
   border-radius: 0 20px 20px 0;
+  background-color: #007acc;
+  color: white;
+  font-weight: bold;
   cursor: pointer;
+}
+
+.newsletterForm__button:focus {
+  outline: none;
 }
 
 .newsletterHeader {

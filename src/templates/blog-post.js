@@ -55,19 +55,34 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             flexWrap: `wrap`,
             justifyContent: `space-between`,
             listStyle: `none`,
-            padding: 0,
+            padding: `20px 0`,
+            margin: `0 20px`,
           }}
         >
           <li>
             {previous && (
-              <Link to={previous.fields.slug} rel="prev">
+              <Link 
+                to={previous.fields.slug} 
+                rel="prev"
+                style={{
+                  color: `black`,
+                  margin: 0,
+                  padding: 0
+                }}
+              >
                 ← {previous.frontmatter.title}
               </Link>
             )}
           </li>
           <li>
             {next && (
-              <Link to={next.fields.slug} rel="next">
+              <Link 
+                to={next.fields.slug} 
+                rel="next"
+                style={{
+                  color: `black`,
+                }}
+              >
                 {next.frontmatter.title} →
               </Link>
             )}

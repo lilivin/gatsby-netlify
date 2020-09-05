@@ -14,6 +14,7 @@ export default class MailChimpForm extends React.Component {
     e.preventDefault()
     const result = await addToMailchimp(this.state.email)
     this.setState({result: result})
+    document.getElementById('email').value = "";
   }
 handleChange = event => {
     this.setState({ email: event.target.value })
@@ -35,6 +36,7 @@ render() {
               label="Email"
               type="email"
               name="email"
+              id="email"
               placeholder="Wpisz swój email..."
               autoComplete="email"
               onChange={this.handleChange}
