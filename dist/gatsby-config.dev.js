@@ -23,6 +23,13 @@ module.exports = {
       endpoint: 'https://gmail.us17.list-manage.com/subscribe/post?u=8f483363674247f434e90221e&amp;id=81a8814874'
     }
   }, {
+    resolve: "gatsby-plugin-google-fonts",
+    options: {
+      fonts: ["lato", "source sans pro:300,400,400i,700" // you can also specify font weights and styles
+      ],
+      display: 'swap'
+    }
+  }, {
     resolve: "gatsby-source-filesystem",
     options: {
       path: "".concat(__dirname, "/content/blog"),

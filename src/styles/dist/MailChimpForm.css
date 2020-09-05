@@ -1,12 +1,15 @@
 .newsletterContainer {
   display: block;
   margin-bottom: 20px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid lightgray;
 }
 @media (min-width: 769px) {
   .newsletterContainer {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-bottom: 30px;
   }
 }
 

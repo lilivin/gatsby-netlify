@@ -1,6 +1,8 @@
 .newsletterContainer {
   display: block;
   margin-bottom: 20px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid lightgray;
 }
 
 @media (min-width: 769px) {
@@ -14,6 +16,7 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    padding-bottom: 30px;
   }
 }
 
