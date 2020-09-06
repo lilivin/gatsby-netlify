@@ -3,21 +3,19 @@ title: Próbny post
 date: 2020-09-06T07:50:48.969Z
 description: Zawsze chciałem spróbować prowadzić bloga i to jest początek tej przygody.
 ---
-# **Witam Was kochani!**
-
-*Testuje właśnie wszystkie style z jakich mogę korzystać w edytorze tekstu.*
-
-#### *Tutaj pierwszy kod*
-
-<!--StartFragment-->
-
+```
 <Link className="article__header-text" to={node.fields.slug}>
 
 {title}
 
 </Link>
+```
 
-<!--EndFragment-->
+# **Witam Was kochani!**
+
+*Testuje właśnie wszystkie style z jakich mogę korzystać w edytorze tekstu.*
+
+#### *Tutaj pierwszy kod*
 
 **A tutaj ciekawa piosenka, której słucham**
 
