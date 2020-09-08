@@ -7,3 +7,4 @@ Blog oparty na starterze Netlify, póki co nie aktualizowany.
 - Netlify
 - GraphQL
 - SCSS
+- MailChimp (Newsletter)
